@@ -90,7 +90,21 @@ qt_add_ui(${PROJECT_NAME} SOURCES ${UI_FILES})
 target_include_directories(${PROJECT_NAME} PRIVATE ${OpenCV_INCLUDE_DIRS} ${CMAKE_CURRENT_SOURCE_DIR}/src/main/ui)
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::Widgets ${OpenCV_LIBS})
 
+
+# 设置Info.plist文件路径
+set(INFO_PLIST "${CMAKE_BINARY_DIR}/Info.plist")
+
+# 生成或修改Info.plist文件
+configure_file(
+    "${CMAKE_SOURCE_DIR}/Info.plist.in"
+    "${INFO_PLIST}"
+    @ONLY
+)
+
+# 将Info.plist文件添加到目标应用程序
 set_target_properties(${PROJECT_NAME} PROPERTIES
     WIN32_EXECUTABLE ON
     MACOSX_BUNDLE ON
+
+    MACOSX_BUNDLE_INFO_PLIST "${INFO_PLIST}"
 )
