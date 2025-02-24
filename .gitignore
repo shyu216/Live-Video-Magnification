@@ -32,3 +32,6 @@ Makefile*
 build/
 
 .vscode/
+
+*.user
+.qtc_clangd/
