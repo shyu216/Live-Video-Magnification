@@ -19,6 +19,6 @@
     <key>LSMinimumSystemVersion</key>
     <string>${CMAKE_OSX_DEPLOYMENT_TARGET}</string>
     <key>NSCameraUsageDescription</key>
-    <string>我们需要访问您的相机来捕捉视频。</string>
+    <string>We need access to your camera for live video streaming.</string>
 </dict>
 </plist>

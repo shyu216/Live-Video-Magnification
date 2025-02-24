@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>423</width>
-    <height>531</height>
+    <width>420</width>
+    <height>590</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -25,7 +25,7 @@
      <x>10</x>
      <y>10</y>
      <width>394</width>
-     <height>511</height>
+     <height>567</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -51,7 +51,6 @@
            <property name="font">
             <font>
              <pointsize>9</pointsize>
-             <weight>50</weight>
              <bold>false</bold>
             </font>
            </property>
@@ -92,7 +91,6 @@
            <property name="font">
             <font>
              <pointsize>9</pointsize>
-             <weight>50</weight>
              <italic>false</italic>
              <bold>false</bold>
             </font>
@@ -113,7 +111,6 @@
          <property name="font">
           <font>
            <pointsize>9</pointsize>
-           <weight>75</weight>
            <bold>true</bold>
           </font>
          </property>
@@ -129,7 +126,6 @@
            <property name="font">
             <font>
              <pointsize>9</pointsize>
-             <weight>50</weight>
              <bold>false</bold>
             </font>
            </property>
@@ -182,7 +178,6 @@
            <property name="font">
             <font>
              <pointsize>9</pointsize>
-             <weight>75</weight>
              <bold>true</bold>
             </font>
            </property>
@@ -194,7 +189,7 @@
          <item>
           <spacer name="horizontalSpacer_2">
            <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+            <enum>Qt::Orientation::Horizontal</enum>
            </property>
            <property name="sizeHint" stdset="0">
             <size>
@@ -226,7 +221,6 @@
          <property name="font">
           <font>
            <pointsize>9</pointsize>
-           <weight>75</weight>
            <bold>true</bold>
           </font>
          </property>
@@ -244,7 +238,6 @@
              <property name="font">
               <font>
                <pointsize>9</pointsize>
-               <weight>50</weight>
                <bold>false</bold>
               </font>
              </property>
@@ -258,7 +251,6 @@
              <property name="font">
               <font>
                <pointsize>9</pointsize>
-               <weight>50</weight>
                <bold>false</bold>
               </font>
              </property>
@@ -314,7 +306,7 @@
        <string>Video File</string>
       </property>
       <property name="alignment">
-       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+       <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft</set>
       </property>
       <property name="flat">
        <bool>false</bool>
@@ -351,7 +343,6 @@
          <property name="font">
           <font>
            <pointsize>9</pointsize>
-           <weight>75</weight>
            <bold>true</bold>
           </font>
          </property>
@@ -367,7 +358,6 @@
            <property name="font">
             <font>
              <pointsize>9</pointsize>
-             <weight>50</weight>
              <bold>false</bold>
             </font>
            </property>
@@ -393,7 +383,7 @@
     <item>
      <widget class="Line" name="line_2">
       <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+       <enum>Qt::Orientation::Horizontal</enum>
       </property>
      </widget>
     </item>
@@ -404,7 +394,6 @@
         <property name="font">
          <font>
           <pointsize>9</pointsize>
-          <weight>50</weight>
           <bold>false</bold>
          </font>
         </property>
@@ -442,7 +431,6 @@
         <property name="font">
          <font>
           <pointsize>9</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -457,7 +445,6 @@
         <property name="font">
          <font>
           <pointsize>9</pointsize>
-          <weight>50</weight>
           <bold>false</bold>
          </font>
         </property>
@@ -492,7 +479,6 @@
         <property name="font">
          <font>
           <pointsize>9</pointsize>
-          <weight>50</weight>
           <italic>false</italic>
           <bold>false</bold>
          </font>
@@ -507,7 +493,6 @@
         <property name="font">
          <font>
           <pointsize>9</pointsize>
-          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -519,7 +504,7 @@
       <item>
        <spacer name="horizontalSpacer_4">
         <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+         <enum>Qt::Orientation::Horizontal</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
@@ -592,7 +577,6 @@
         <property name="font">
          <font>
           <pointsize>9</pointsize>
-          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -604,7 +588,7 @@
       <item>
        <spacer name="horizontalSpacer">
         <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+         <enum>Qt::Orientation::Horizontal</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
@@ -625,7 +609,6 @@
           <property name="font">
            <font>
             <pointsize>9</pointsize>
-            <weight>75</weight>
             <bold>true</bold>
            </font>
           </property>
@@ -650,7 +633,7 @@
     <item>
      <widget class="Line" name="line">
       <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+       <enum>Qt::Orientation::Horizontal</enum>
       </property>
      </widget>
     </item>
@@ -666,10 +649,10 @@
       <item>
        <widget class="QDialogButtonBox" name="okCancelBox">
         <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+         <enum>Qt::Orientation::Horizontal</enum>
         </property>
         <property name="standardButtons">
-         <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+         <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
         </property>
        </widget>
       </item>
