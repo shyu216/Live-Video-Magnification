@@ -16,6 +16,32 @@
             "name": "clang",
             "displayName": "Clang",
             "inherits": "mac-base"
+        },
+        {
+          "name": "ninja-nmc-base",
+          "hidden": true,
+          "generator": "Ninja Multi-Config",
+          "binaryDir": "${sourceDir}/build/${presetName}",
+          "cacheVariables": {
+            "CMAKE_MAKE_PROGRAM": "C:/Qt/Tools/Ninja/ninja.exe"
+          }
+        },
+        {
+          "name": "mingw-base",
+          "hidden": true,
+          "inherits": "ninja-nmc-base",
+          "cacheVariables": {
+            "CMAKE_PREFIX_PATH": "C:/Qt/6.8.2/mingw_64",
+            "OpenCV_DIR": "C:/opencv/mingw-build"
+          },
+          "environment": {
+            "PATH": "C:/Qt/6.8.2/mingw_64/bin;C:/opencv/mingw-build/x64/mingw/bin;$penv{PATH}"
+          }
+        },
+        {
+          "name": "mingw",
+          "displayName": "MinGW",
+          "inherits": "mingw-base"
         }
     ],
     "buildPresets": [
@@ -30,6 +56,18 @@
             "configurePreset": "clang",
             "displayName": "Release",
             "configuration": "RelWithDebInfo"
+        },
+        {
+          "name": "mingw-debug",
+          "configurePreset": "mingw",
+          "displayName": "Debug",
+          "configuration": "Debug"
+        },
+        {
+          "name": "mingw-release",
+          "configurePreset": "mingw",
+          "displayName": "Release",
+          "configuration": "RelWithDebInfo"
         }
     ]
 }

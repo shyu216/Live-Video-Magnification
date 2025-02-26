@@ -35,3 +35,5 @@ build/
 
 *.user
 .qtc_clangd/
+
+CMakeUserPresets.json
